@@ -1,0 +1,71 @@
+.image {
+  width: 1520px;
+  height: 690px;
+  margin-top: -30px;
+  margin-left: -20px;
+  pointer-events: none;
+}
+
+.image1 {
+  width: auto;
+  height: auto;
+  margin-top: 40px;
+  margin-left: -800px;
+}
+
+
+.container {
+  margin: 30px;
+  margin-top: 75px;
+  margin-left: 160px;
+  text-align: center;
+}
+
+.container1 {
+  margin: 30px;
+  margin-top: 20px;
+  margin-left: 160px;
+  text-align: center;
+}
+
+.icon {
+  color: #ffffff;
+  top: 10px;
+  height: 20px;
+}
+
+.homeIcon {
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.link, .link:visited {
+  color: #eeeeeef2;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #9e9696;
+}
+
+
+.link1, .link1:visited {
+  color: #000000f2;
+  text-decoration: none;
+}
+
+.link1:hover {
+  color: #000000a5;
+}
+
+
+
+#standard-password-input {
+  color: white;
+}
+
+#standard-username-input {
+  color: white;
+  
+}

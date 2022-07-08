@@ -1,0 +1,39 @@
+.dishCardImage {
+  width: 100%;
+  height: 200px;
+}
+
+.orderCardImage {
+  width : 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.photoCardImage {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.photoCardImage:hover {
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  margin-top: -20px;
+  margin-left: -130px;
+  box-shadow: 0 0 2px 2px rgba(93, 127, 140, 0.5);
+}
+
+#con {
+  position: relative;
+  margin-top: -10px;
+  right: 60px;
+  width: 300px;
+}
+.list {
+  font-size: 20px;
+  font-weight: bold;
+}
+
