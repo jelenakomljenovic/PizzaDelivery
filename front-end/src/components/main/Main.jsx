@@ -3,7 +3,7 @@ import TopBar from '../topbar/Topbar';
 import Login from '../login/Login';
 import Register from '../register/Register';
 import CustomerView from '../customerView/CustomerView';
-import DriverView from '../driverView/DriverView';
+import SellerView from '../driverView/SellerView';
 import RestaurantView from '../restaurantView/RestaurantView';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import {
@@ -74,7 +74,7 @@ class Main extends React.Component {
                   <Redirect path="/customer" to="/login" />
                 )}
                 {this.state.userType && this.state.userType === "driver" ? (
-                  <Route path="/driver" render={props => <DriverView {...props} currentUser={this.state.currentUser} changeView={this.changeView} />} />
+                  <Route path="/driver" render={props => <SellerView {...props} currentUser={this.state.currentUser} changeView={this.changeView} />} />
                 ) : (
                   <Redirect path="/driver" to="/login" />
                 )}

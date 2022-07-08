@@ -3,7 +3,7 @@ import React from 'react';
 import OrderCard from "../../card/OrderCard";
 const axios = require('axios').default;
 
-class DriverOrder extends React.Component {
+class SellerOrder extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,4 +37,4 @@ class DriverOrder extends React.Component {
   }
 }
 
-export default DriverOrder;
+export default SellerOrder;

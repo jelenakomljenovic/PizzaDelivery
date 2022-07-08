@@ -11,7 +11,7 @@ import {
 }
 from '@material-ui/core';
 
-class DriverBar extends React.Component {
+class SellerBar extends React.Component {
   render() {
     return (
       <div style = {{height: "600px"}}>
@@ -41,4 +41,4 @@ class DriverBar extends React.Component {
   }
 }
 
-export default DriverBar;
+export default SellerBar;

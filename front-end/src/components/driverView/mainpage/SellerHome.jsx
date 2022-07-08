@@ -3,21 +3,21 @@ import React from 'react';
 import OrderCard from "../../card/OrderCard";
 const axios = require('axios').default;
 
-class DriverHistory extends React.Component {
+class SellerHome extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       orders: undefined
     }
-    this.getDriverHistory = this.getDriverHistory.bind(this);
+    this.getPendingOrders = this.getPendingOrders.bind(this);
   }
 
   componentDidMount() {
-    this.getDriverHistory();
+    this.getPendingOrders();
   }
 
-  getDriverHistory() {
-    axios.get("/api/driver/myOrderHistory/" + this.props.currentUser.id).then(
+  getPendingOrders() {
+    axios.get("/api/driver/pendingOrders/" + this.props.currentUser.id).then(
       response => {
         this.setState({orders: response.data});
       }
@@ -30,13 +30,13 @@ class DriverHistory extends React.Component {
         <Grid container justify="space-evenly" spacing={3}>
           {this.state.orders.length > 0 ? this.state.orders.map(order => (
             <Grid item key={order.id} xs={5}>
-              <OrderCard order={order} userType={this.props.currentUser.type} />
+              <OrderCard order={order} userType={this.props.currentUser.type} getOrders={this.getPendingOrders} />
             </Grid>
-          )) : <Typography variant="h5"><i>You don't have any past orders...</i></Typography>}
+          )) : <Typography variant="h5"><i>There is no available order...</i></Typography>}
         </Grid>
       </div>
-    ) : <div />
+    ) : <Typography variant="h5"><i>You already have an active order in delivery...</i></Typography>
   }
 }
 
-export default DriverHistory;
+export default SellerHome;
