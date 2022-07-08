@@ -75,7 +75,6 @@ INDEX VERSION 1.131+C:\Users\PC\OneDrive\Desktop\PizzaShop\.metadata\.plugins\or
 1969208861.index
 3756101446.index
 1976144242.index
-2528851945.index
 295455924.index
 1663011664.index
 1276957651.index
